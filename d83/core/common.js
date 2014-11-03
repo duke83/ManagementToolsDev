@@ -6,7 +6,8 @@ function common($q, $rootScope, $timeout) {
     var service = {
         // common angular dependencies
         $q: $q,
-        $timeout: $timeout,
+        $timeout: $timeout
+
     };
     return service;
 }

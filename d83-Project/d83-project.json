@@ -1,0 +1,30 @@
+{
+  "project": {
+    "name": "My Sample Project",
+    "description": "This is a sample project for developing the duke83/ManagementToolsDev application",
+    "githubName": "duke83/MySampleProject",
+    "sprints": [
+      {
+        "endDate": "Dec 1, 2014",
+        "description": "First sprint is meant to provide initial feature set and shape of project.  It will/should change in the next sprint. Provide the context to make meaningful changes in the next sprint.",
+        "status": "Started",
+        "features": [
+          {
+            "name": "Layout",
+            "description": "General layout",
+            "githubBranchName": "FeatureLayout",
+            "userStoryDocs":[{"name":"userStoryDoc1.html"},{"name":"userStoryDoc2.html"}],
+            "designDocs":[{"name":"designDoc1.html"},{"name":"designDoc2.html"}],
+            "autoTestDocs":[{"name":"autoTestDoc1.html"},{"name":"autoTestDoc2.html"}],
+            "taskListDoc":"somegooglesheet"
+          }
+        ]
+      },
+      {
+        "endDate": "Dec 15, 2014",
+        "description": "Second sprint will flesh out and solidify feature set.  It will/should change in the next sprint. Provide the context to make meaningful changes in the next sprint.",
+        "status": "NotStarted"
+      }
+    ]
+  }
+}
