@@ -5,12 +5,13 @@ angular
     .module("d83.core")
     .factory("projectDataSrvc", projectDataSrvc);
 
-function projectDataSrvc($http){
-    return{
-        pdata:$http.get("../d83-Project/d83-project.json").success(function(a,b,c,d,e,f,g){
-                console.log(arguments)
-            }
-        )
+function projectDataSrvc($http) {
+    return {
+        getProjectData: function () {
+
+            return $http.get("../d83-Project/d83-project.json")
+        }
     }
 }
+
 
