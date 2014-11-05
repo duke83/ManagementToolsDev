@@ -7,9 +7,15 @@ angular
 
 function projectDataSrvc($http) {
     return {
-        getProjectData: function () {
+        getProjectData: function (test) {
+            if (!test) {
+                return $http.get("../d83-Project/d83-project.json")
+            }
+            return"";
+        },
 
-            return $http.get("../d83-Project/d83-project.json")
+        deletedata: function () {
+            return this.getProjectData(true);
         }
     }
 }

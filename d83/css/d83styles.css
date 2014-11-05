@@ -11,7 +11,6 @@
   top: 0px;
   border: #000000  solid 1px;
 }
-
 .d83-navigator-contracted {
   width: 150px;
   height: 20px;
@@ -22,26 +21,23 @@
   display: inline-block;
   float: left;
   left: 0px;
-  top: 0px
+  top: 0px;
 }
-
-.d83-navigator-content{
+.d83-navigator-content {
   /*background-color: green;*/
-  padding:5px;
-
+  padding: 5px;
 }
-.d83-annotationContainer{
+.d83-annotationContainer {
   background-color: red;
   position: fixed;
   display: inline-block;
-  right:20px;
-  top:3px;
+  right: 20px;
+  top: 3px;
 }
-
-.d83-navigator-content h2{
+.d83-navigator-content h2 {
   font-size: 14px;
   background-color: #3b83de;
-  color:#f5f5f5;
-  padding:5px;
+  color: #f5f5f5;
+  padding: 5px;
   display: block;
 }

@@ -7,6 +7,7 @@
         but this is easier to maintain.
         */
         'd83.core',
-        'd83.layout'
+        'd83.annotation',
+        'd83.navigator'
     ]);
 })();
