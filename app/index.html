@@ -32,11 +32,14 @@
   <div>Angular seed app: v<span app-version></span></div>
 
   now calling annotation--
-  <d83-annotation>
-      I am transculded content.
-  </d83-annotation>
 
-  Is it going to work?: <d83-navigator></d83-navigator>
+
+  Is it going to work?:
+  <d83-navigator>
+    <d83-annotation>
+      I am transculded content.
+    </d83-annotation>
+  </d83-navigator>
   <!-- In production use:
   <script src="//ajax.googleapis.com/ajax/libs/angularjs/x.x.x/angular.min.js"></script>
   -->
