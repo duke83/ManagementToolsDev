@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+
+    <script src="bower_components/angular/angular.js"></script>
+</head>
+<body>
+
+<script type="application/javascript">
+    angular.element(document).ready(function () {
+        //alert('angular is active');
+        var $injector = angular.bootstrap(document, ['myApp']);
+        console.log('$injector',$injector)
+        var $controller = $injector.get('$controller');
+        console.log('$controller ',$controller )
+        var AngularCtrl = $controller('AngularCtrl');
+        console.log('AngularCtrl ',AngularCtrl)
+        AngularCtrl.setUserName();
+    });
+
+    angular.module('myApp',[])
+            .controller('AngularCtrl',function($scope){
+                console.log('in AngularCtrl')
+
+                var _setUserName=function(){
+                    console.log('setting user name')
+                }
+                return{
+                    setUserName:_setUserName()
+                }
+            });
+//    var AngularCtrl=function(){
+//        var setUserName=function(){
+//            alert('setting usernmae')
+//        }
+//    }
+
+</script>
+
+
+</body>
+</html>
